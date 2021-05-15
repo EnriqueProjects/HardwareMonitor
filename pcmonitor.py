@@ -7,7 +7,7 @@ import psutil
 ser = serial.Serial('COM4', 9600)
 
 # os.system('start D:\hardware\OpenHardwareMonitor\OpenHardwareMonitor.exe')
-# os.system('runas /savecred /user:DESKTOP-DBQ6QH7\quique D:\hardware\OpenHardwareMonitor\OpenHardwareMonitor.exe')
+# os.system('runas /savecred /user:***mon pc*** D:\hardware\OpenHardwareMonitor\OpenHardwareMonitor.exe')
 os.system("schtasks.exe /run /tn \"mestaches\OHWsansUAC\"")
 time.sleep(2)
 w = wmi.WMI(namespace="root\OpenHardwareMonitor")
